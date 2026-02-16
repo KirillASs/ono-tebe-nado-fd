@@ -10,29 +10,31 @@
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
   </head>
   <body>
-    <header class="header text-size__18">
-      <div class="header__menu">
+    <header class="header">
+      <div class="header__menu__container">
 
         <!-- меню навигации -->
 
-        <ul class="header__menu-nav">
-          <li><a class="header__link header__link-active" href="#">главная</a></li>
-          <li><a class="header__link" href="#">посмотреть лоты</a></li>
-          <li><a class="header__link" href="#">об аукционе</a></li>
-        </ul>
+        <nav class="header__menu">
+          <ul class="header__links-list">
+            <li><a class="header__link header__link-active header__link_no-bullit" href="#">главная</a></li>
+            <li><a class="header__link" href="#">посмотреть лоты</a></li>
+            <li><a class="header__link" href="#">об аукционе</a></li>
+          </ul>
+        </nav>
 
         <!-- логотип меню -->
 
         <div class="header__logo">
-          <a href=""><img src="./images/logo-black.svg" alt="оно тебе надо"></a>
+          <a href=""><img src="./images/logo-black.svg" alt="лготип оно тебе надо, черный цвет"></a>
         </div>
       </div>
       
       <!-- контакты меню -->
 
       <div class="contact-info">
-          <a class="contact-info__tel" href="tel:+99995555555">+9 999 555 5555</a>
-          <a class="contact-info__mail" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+          <a class="contact-info__tel-mail" href="tel:+99995555555">+9 999 555 5555</a>
+          <a class="contact-info__tel-mail" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
           <address class="contact-info__address">наб. Принсенграхт 263- 265, Амстердам</address>
       </div>
     </header>
@@ -42,8 +44,7 @@
       <!-- стартовая секция -->
 
       <section class="start-section text-color__white">
-        <div class="overlay"></div>
-
+        
         <!-- начало контента -->
 
         <div class="start-section__content">
@@ -53,7 +54,7 @@
             <span class="aligned-text_right">НАД<span class="no-letter-spacing">О</span></span>
           </div>
 
-          <div class="start-section__description text-size__22">
+          <div class="start-section__description">
             <p class="start-section__description__text text-uppercase">Аукцион вещей, в которые никто не верил</p>
 
             <button class="start-section__description__button text-uppercase text-color__white">Сделать ставку</button>
@@ -67,65 +68,59 @@
 
         <!-- заголовок лотов -->
 
-        <h2 class="lots__heading text-uppercase text-size__40">Лоты</h2>
+        <h2 class="lots__heading text-uppercase">Лоты</h2>
 
         <!-- карты лотов -->
 
-        <div class="lots__card-list text-color__white">
-          <div class="lots__card-list-item card_type_film">
-            <div class="overlay"></div>
-
-            <div class="card">
-              <h3 class="card__title text-uppercase text-size__22">
+        <ul class="lots__card-list text-color__white">
+          <li class="lots__card-list-item card_type_film">
+            <article class="card">
+              <h3 class="card__title text-uppercase">
                 Фильм режиссёра, который бросил киношколу
               </h3>
 
-              <p class="card__text text-size__20">
+              <p class="card__text">
                 Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, 
                 если бы вы не знали, что режиссёр — Пол Томас Андерсон?
               </p>
-            </div>
-          </div>
+            </article>
+          </li>
 
-          <div class="lots__card-list-item card_type_book">
-            <div class="overlay"></div>
-
-            <div class="card">
-              <h3 class="card__title text-uppercase text-size__22">
+          <li class="lots__card-list-item card_type_book">
+            <article class="card">
+              <h3 class="card__title text-uppercase">
                 Книга, где описан один скучный день из жизни рекламного агента
               </h3>
 
-              <p class="card__text text-size__20">
+              <p class="card__text">
                 Объёмом почти в тысячу страниц. Иногда без знаков препинания и 
                 с переходами на древнеанглийский. В ней одновременно рассказывается 
                 о 16 июня 1904 года и об истории литературы, начиная с античных времён. 
                 И это всё накладывается на эпическую поэму Гомера. Сколько бы вы 
                 поставили на «Улисса» Джеймса Джойса?
               </p>
-            </div>
-          </div>
+            </article>
+          </li>
 
-          <div class="lots__card-list-item card_type_picture">
-            <div class="overlay"></div>
-
-            <div class="card">
-              <h3 class="card__title text-uppercase text-size__22">
+          <li class="lots__card-list-item card_type_picture">
+            <article class="card">
+              <h3 class="card__title text-uppercase">
                 Картина, которую повторит даже 5-летний сын маминой подруги
               </h3>
 
-              <p class="card__text text-size__20">
+              <p class="card__text">
                 Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то
                 похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... 
                 Сколько бы вы на такое поставили, если бы не знали, что это — одна 
                 из революционных работ Кандинского?
               </p>
-            </div>
-          </div>
-        </div>
+            </article>
+          </li>
+        </ul>
 
         <!-- ссылка под лотами -->
 
-        <a class="lots__look-more-link text-size__20" href="#">посмотреть больше</a>
+        <a class="lots__look-more-link" href="#">посмотреть больше</a>
       </section>
 
       <!-- начало секции о нас -->
@@ -136,7 +131,7 @@
 
         <div class="about__column">
           <div class="about__logo">
-            <img src="./images/logo-white.svg" alt="">
+            <img src="./images/logo-white.svg" alt="логотип оно тебе надо, белого цвета">
           </div>
         </div>
         
@@ -144,9 +139,9 @@
 
         <div class="about__column">
           <div class="about__text__container">
-            <h2 class="about__title text-size__40 text-uppercase">Об аукционе</h2>
+            <h2 class="about__title text-uppercase">Об аукционе</h2>
 
-            <div class="about__text text-size__20">
+            <div class="about__text">
               <p>
                 Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. 
                 Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник 
@@ -168,7 +163,7 @@
 
     <!-- начало подвала -->
 
-    <footer class="footer text-size__18">
+    <footer class="footer">
 
       <!-- контакты подвала -->
 
@@ -180,27 +175,27 @@
 
       <!-- меню подвала -->
 
-      <div class="footer__menu">
+      <nav class="footer__menu">
         <ul>
           <li><a class="footer__menu__link footer__menu__link-active" href="">главная</a></li>
           <li><a class="footer__menu__link" href="">посмотреть лоты</a></li>
           <li><a class="footer__menu__link" href="">об аукционе</a></li>
         </ul>
-      </div>
+      </nav>
 
       <!-- иконки соц-сетей подвала -->
 
       <div class="social-list">
         <a href="#" class="footer__social-link">
-          <img class="footer__social-icon" src="./images/yt.svg" alt="">
+          <img class="footer__social-icon" src="./images/yt.svg" alt="картинка соц-сети ютуб">
         </a>
 
         <a href="#" class="footer__social-link">
-          <img class="footer__social-icon" src="./images/vk.svg" alt="">          
+          <img class="footer__social-icon" src="./images/vk.svg" alt="картинка соц-сети вк">          
         </a>
 
         <a href="#" class="footer__social-link">
-          <img class="footer__social-icon" src="./images/pinterest.svg" alt="">
+          <img class="footer__social-icon" src="./images/pinterest.svg" alt="картинка соц-сети pinterest">
         </a>
       </div>
     </footer>
