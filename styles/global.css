@@ -23,10 +23,13 @@ li,
 blockquote {
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 a {
   color: inherit;
+  text-underline-offset: 4px;
+  text-decoration-thickness: .5px;
 }
 
 img {
