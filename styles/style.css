@@ -55,7 +55,7 @@
   gap: 13px;
 }
 
-.header__menu-nav li{
+.header__menu-nav li {
   padding: 10px 0;
   cursor: pointer;
 }
@@ -107,7 +107,7 @@
   text-underline-offset: 4px;
 }
 
-.contact-info__address{
+.contact-info__address {
   font-style: normal;
 }
 
@@ -168,13 +168,13 @@
 
 /* блок с текстом и кнопкой */
 
-.start-section__description{
+.start-section__description {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.start-section__description__text{
+.start-section__description__text {
   word-spacing: 18.5px;
 }
 
@@ -220,13 +220,13 @@
 
 /* настройка заднего фона карточек */
 
-.card_type_film{
+.card_type_film {
   background-image: url(../images/card-lot-01.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 165% 100%;
 }
-.card_type_book{
+.card_type_book {
   background-image: url(../images/card-lot-02.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -248,13 +248,13 @@
   z-index: 10;
 }
 
-.card__title{
+.card__title {
   text-decoration: underline;
   text-underline-offset: 3px;
   text-decoration-thickness: 1px;
 }
 
-.card__text{
+.card__text {
   line-height: 24px;
 }
 
@@ -290,7 +290,7 @@
   margin-left: 7px;
 }
 
-.about__logo img{
+.about__logo img {
   height: 114px;
 }
 
@@ -339,11 +339,8 @@
   gap: 48px;
 }
 
-.footer__social-icon{
-  text-decoration: none;
-}
-
 .footer__social-icon {
+  text-decoration: none;
   height: 48px;
   width: 48px;
 }
