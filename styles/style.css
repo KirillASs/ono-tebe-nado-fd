@@ -85,7 +85,7 @@
   list-style: none;
 }
 
-.contact-info__tel-mail {
+.contact-info__link {
   text-underline-offset: 4px;
 }
 
@@ -95,8 +95,16 @@
 
 /* Начало блока мейн, первая секция */
 
-/* с неймингом небольшие проблемы, но мне не очень понравилось
-предложенное название класса, решил назвать сам */
+/* блок овереля через псевдо класс*/
+
+.overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, .6)
+}
+
 
 .start-section {
   position: relative;
@@ -106,14 +114,6 @@
   background-repeat: no-repeat;
   background-position: 51% center;
   background-size: cover;
-}
-
-.start-section::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background-color: rgba(0, 0, 0, .6)
 }
 
 .start-section__content {
@@ -202,14 +202,6 @@
   padding: 48px 40px;
   background-repeat: no-repeat;
   background-position: center center;
-}
-
-.lots__card-list-item::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background-color: rgba(0, 0, 0, .6)
 }
 
 /* настройка заднего фона карточек */
